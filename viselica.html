@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Виселица"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Компьютерная игра "Виселица"</h1>
+        <div id="hangman-figure">
+            <div class="gallows-stand"></div>
+            <div class="gallows-arm"></div>
+            <div class="gallows-rope"></div>
+            <div class="gallows-base"></div>
+            <div id="head" class="body-part"></div>
+            <div id="body" class="body-part"></div>
+            <div id="left-arm" class="body-part"></div>
+            <div id="right-arm" class="body-part"></div>
+            <div id="left-leg" class="body-part"></div>
+            <div id="right-leg" class="body-part"></div>
+        </div>
+        <p id="guesses">Осталось попыток: <span id="attempts-left">6</span></p>
+        <div id="word-display"></div>
+        <div id="keyboard"></div>
+        <div id="message"></div>
+        <button id="play-again" onclick="startGame()">Играть ещё раз</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
