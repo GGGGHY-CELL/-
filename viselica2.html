@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Виселица | Hangman</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-container">
+            <div class="game-header">
+                <h1> ВИСЕЛИЦА </h1>
+            </div>
+
+            <div class="hangman-area">
+                <div class="canvas-box">
+                    <canvas id="hangmanCanvas" width="260" height="280"></canvas>
+                </div>
+                <div class="word-section">
+                    <div class="word-display" id="wordDisplay"></div>
+                    <div class="hint-box" id="hintText"> Подсказка: загружается...</div>
+                    <div class="mistakes" id="mistakesCount"> Ошибки: 0 / 6</div>
+                </div>
+            </div>
+
+            <div class="keyboard" id="keyboardContainer"></div>
+
+            <div class="action-buttons">
+                <button class="new-game-btn" id="newGameBtn"> НОВОЕ СЛОВО</button>
+                <button class="reset-btn" id="resetGameBtn"> СБРОС ИГРЫ</button>
+            </div>
+            <div class="message-area" id="messageBox"> нажми на буквы </div>
+        </div>
+    </div>
+
+    <script src="./script2.js"></script>
+</body>
+</html>
